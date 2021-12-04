@@ -9,15 +9,15 @@
 
 Plugin for [Mocks Server][website-url] that provides a [route handler](https://www.mocks-server.org/docs/api-routes-handler) that proxy requests to another host and pass response back to original caller.
 
-It uses the [express-http-proxy](`https://github.com/villadora/express-http-proxy`) package under the hood, and supports all of its options.
+It uses the [express-http-proxy](https://github.com/villadora/express-http-proxy) package under the hood, and supports all of its options.
 
 ## Usage
 
 This plugin is included in the [main distribution of the Mocks Server project][main-distribution-url], so you can also read the [official documentation website][website-url].
 
-### Routes
+### Proxy routes
 
-If you want a [route variant](https://www.mocks-server.org/docs/get-started-routes) to use the `proxy` handler, define its `handler` property as "proxy":
+If you want a [route variant](https://www.mocks-server.org/docs/get-started-routes) to use the `proxy` handler, define its `handler` property as "proxy". Use the `host` property to set the host for the route, and the `options` property to set any of the [express-http-proxy](https://github.com/villadora/express-http-proxy) options.
 
 ```js
 module.exports = [
