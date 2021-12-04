@@ -52,7 +52,7 @@ Mocks server common properties to all route handlers are in _cursive_. Specific 
 * __`options`__ _(Object)_: Object containing any of the [options supported by the `express-http-proxy` package](https://github.com/villadora/express-http-proxy#options). Some of them are:
   * __filter__ _(Function)_: [`filter` option](https://github.com/villadora/express-http-proxy#filter-supports-promises) for `express-http-proxy`.
   * __userResDecorator__ _(Function)_: [`userResDecorator` option](https://github.com/villadora/express-http-proxy#userresdecorator-was-intercept-supports-promise) for `express-http-proxy`.
-  * __...__ the rest of the [options supported by the `express-http-proxy` package](https://github.com/villadora/express-http-proxy#options) are also supported.
+  * __...__ all other [`express-http-proxy` options](https://github.com/villadora/express-http-proxy#options) are also supported.
 
 > Tip: Note that the `delay` option is still valid for routes handled by this plugin, so you can use it to simulate "slow" proxied hosts.
 
