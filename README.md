@@ -70,7 +70,7 @@ Please read the [contributing guidelines](.github/CONTRIBUTING.md) and [code of 
 [coveralls-image]: https://coveralls.io/repos/github/mocks-server/plugin-proxy/badge.svg
 [coveralls-url]: https://coveralls.io/github/mocks-server/plugin-proxy
 [build-image]: https://github.com/mocks-server/plugin-proxy/workflows/build/badge.svg?branch=main
-[build-url]: https://github.com/mocks-server/plugin-proxy/actions?query=workflow%3Abuild+branch%main
+[build-url]: https://github.com/mocks-server/plugin-proxy/actions?query=workflow%3Abuild+branch%3Amain
 [last-commit-image]: https://img.shields.io/github/last-commit/mocks-server/plugin-proxy.svg
 [last-commit-url]: https://github.com/mocks-server/plugin-proxy/commits
 [license-image]: https://img.shields.io/npm/l/@mocks-server/plugin-proxy.svg
