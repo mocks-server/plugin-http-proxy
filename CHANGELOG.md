@@ -12,6 +12,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 ### Removed
 
+## [1.0.1] - 2021-12-05
+
+### Fixed
+- docs: Fix main branch name in badges
+- chore(workflows): Fix main branch name
+
 ## [1.0.0] - 2021-12-05
 
 ### Added
