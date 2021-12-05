@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 ### Removed
 
+## [1.0.3] - 2021-12-05
+
+### Fixed
+- fix: Add `init`, `start` and `stop` methods to avoid alerts
+
 ## [1.0.2] - 2021-12-05
 
 ### Fixed
