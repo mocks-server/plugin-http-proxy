@@ -14,7 +14,7 @@
     "development"
   ],
   "author": "Javier Brea",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "repository": "https://github.com/mocks-server/plugin-proxy",
   "homepage": "https://www.mocks-server.org",
   "publishConfig": {
