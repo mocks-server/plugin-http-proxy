@@ -9,6 +9,18 @@ class Plugin {
   get displayName() {
     return packageInfo.name;
   }
+
+  init() {
+    // do nothing
+  }
+
+  start() {
+    // do nothing
+  }
+
+  stop() {
+    // do nothing
+  }
 }
 
 module.exports = Plugin;
