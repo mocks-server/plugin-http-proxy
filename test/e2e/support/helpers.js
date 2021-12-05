@@ -8,6 +8,7 @@ const Plugin = require("../../../index");
 
 const SERVER_PORT = 3100;
 const HOST_PORT = 3200;
+const HOST_PORT_2 = 3300;
 
 const defaultOptions = {
   port: SERVER_PORT,
@@ -54,12 +55,18 @@ const startHost = () => {
   });
 };
 
+const startHost2 = () => {
+  return startExistingCore(createCore({ loadPlugin: false }), "host-2", {
+    port: HOST_PORT_2,
+  });
+};
+
 const startServer = (mocksPath, options = {}) => {
   return startExistingCore(createCore(), mocksPath, options);
 };
 
 const serverUrl = (port) => {
-  return `http://localhost:${port || SERVER_PORT}`;
+  return `http://127.0.0.1:${port || SERVER_PORT}`;
 };
 
 const fetch = (uri, options = {}) => {
@@ -122,6 +129,10 @@ const waitForHost = () => {
   return waitForServer(HOST_PORT);
 };
 
+const waitForHost2 = () => {
+  return waitForServer(HOST_PORT_2);
+};
+
 const waitForServerUrl = (url) => {
   return waitOn({ resources: [`${serverUrl()}${url}`] });
 };
@@ -147,5 +158,7 @@ module.exports = {
   findAlert,
   findTrace,
   startHost,
+  startHost2,
   waitForHost,
+  waitForHost2,
 };

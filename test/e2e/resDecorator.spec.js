@@ -1,11 +1,11 @@
 const { startServer, fetch, waitForServer, waitForHost, startHost } = require("./support/helpers");
 
-describe("when everything is proxied", () => {
+describe("when using filter option", () => {
   let server, host;
 
   beforeAll(async () => {
     host = await startHost();
-    server = await startServer("docs-example");
+    server = await startServer("res-decorator");
     await waitForHost();
     await waitForServer();
   });
@@ -16,16 +16,16 @@ describe("when everything is proxied", () => {
   });
 
   describe("get /users", () => {
-    it("should return users from host", async () => {
+    it("should return modified users from host", async () => {
       const response = await fetch("/api/users");
       expect(response.body).toEqual([
         {
           id: 1,
-          name: "John Doe",
+          name: "Modified John Doe",
         },
         {
           id: 2,
-          name: "Jane Doe",
+          name: "Modified Jane Doe",
         },
       ]);
     });
@@ -36,7 +36,7 @@ describe("when everything is proxied", () => {
       const response = await fetch("/api/users/2");
       expect(response.body).toEqual({
         id: 2,
-        name: "Jane Doe",
+        name: "Modified Jane Doe",
       });
     });
   });
