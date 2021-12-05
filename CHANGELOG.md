@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 - docs: Fix main branch name in badges
-- chore(workflows): Fix mainn branch name
+- chore(workflows): Fix main branch name
 
 ## [1.0.0] - 2021-12-05
 
