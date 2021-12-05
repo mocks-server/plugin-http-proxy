@@ -8,7 +8,7 @@ module.exports = [
         id: "enabled",
         handler: "proxy",
         host: () => {
-          return "http://localhost:3200";
+          return "http://127.0.0.1:3200";
         },
         options: {},
       },
@@ -27,7 +27,7 @@ module.exports = [
         id: "enabled",
         handler: "proxy",
         host: () => {
-          return "http://localhost:3300";
+          return "http://127.0.0.1:3300";
         },
         options: {},
       },

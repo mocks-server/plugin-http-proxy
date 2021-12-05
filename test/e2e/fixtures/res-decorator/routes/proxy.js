@@ -14,7 +14,7 @@ module.exports = [
       {
         id: "enabled",
         handler: "proxy",
-        host: "http://localhost:3200",
+        host: "http://127.0.0.1:3200",
         options: {
           userResDecorator: function (proxyRes, proxyResData) {
             const data = JSON.parse(proxyResData.toString("utf8"));
